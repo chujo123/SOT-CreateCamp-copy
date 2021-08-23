@@ -21,6 +21,7 @@
 
 /*Drop down menu*/
 .dropdown {
+ 
   margin: 0 1rem;
   font-family: "Oswald", sans-serif;
   text-transform: none;
@@ -33,12 +34,13 @@
   /*Styles needed for the button only*/
   border: 2rem;
   background: none;
-  width:100%;
+  width:50%;
+  
 }
-/*.dropdown {
-    position: relative;
-    display: inline-block;
-  }*/
+
+.dropContainer{
+  display: flex;
+}
 
 .dropdown-content {
   display: none;
@@ -407,6 +409,7 @@ span {
 
 /*Drop down menu*/
 .dropdown {
+  display: flex;
   margin: 0 1rem;
   font-family: "Oswald", sans-serif;
   text-transform: none;
@@ -420,12 +423,8 @@ span {
   border: 2rem;
   background: none;
 }
-.dropdown {
-    position: relative;
-    display: inline-block;
-  }
 .dropdown-content {
-  display: none;
+  /* display: none; */
   position: relative;
   background-color: #faf320;
   min-width: 4rem;
