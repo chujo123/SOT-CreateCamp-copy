@@ -37,6 +37,10 @@
   width:50%;
   
 }
+.rwd-MastHead{
+  display: flex;
+  justify-content: space-evenly;
+}
 
 .dropContainer{
   display: flex;
@@ -76,6 +80,10 @@
   background-color: rgb(68, 215, 241);
   color: black;
   transition: 50s;
+}
+
+div{
+  font-size: 115%;
 }
 
 .dropbtn{
@@ -152,7 +160,7 @@
   display: inline-block;
   width: 30%;
   margin-left: 20%;
-  border-radius: 25px;
+  border-radius: 50%;
 }
 
 .logBox {
@@ -222,6 +230,9 @@ h1{
 .mainPage{
     height:100%;
     background-color: white;
+    padding-left: 10%;
+    padding-right: 10%;
+    
 }
 
 body{
@@ -232,6 +243,7 @@ body{
     background-color:rgb(240, 240, 240);
     padding-left: 20%;
     padding-right: 20%;
+    overflow: scroll;
 }
 
 .senarioBody{
@@ -285,6 +297,7 @@ body{
 }
 
 
+
 .logBox{
     
     background-color:rgb(240, 240, 240);
@@ -294,12 +307,19 @@ body{
     margin-left: 10%;
     margin-right: 10%;
     font-size: 200%;
-    padding-left: 1%;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 3%;
+    padding-bottom: 3%;
 }
 
+.senarioImage{
+  height:10%;
+  width:50%;
+}
 
 .logBoxText{
-	
+	font-size: 100%;
 	vertical-align: initial;
 }
 
@@ -459,36 +479,17 @@ span {
 }
 
 
-/* senario section*/
-[class^="senario-"] figure {
-  overflow: hidden;
-  display: grid;
-  place-content: center;
-  border-radius: 0.5rem;
-}
 
-[class^="senario-"] figure img {
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-  object-position: 50% 50%;
-  border-radius: 1rem;
-}
-
-[class^="senario-"] p {
-  font-size: 1rem;
-  line-height: 1.5;
-  padding: 1.5rem 3.2rem;
-  text-align: justify;
-}
 
 
 .button{
     padding-top: 1%;
     text-align: center;
+    width:100%;
+    height:100%; 
 }
 
-@media only screen and (max-width:1024px) {
+@media only screen and (max-width:1500px) {
   body {
     padding-left: 0%;
     padding-right: 0%;
@@ -498,7 +499,11 @@ span {
     padding-right: 0%;
   }
   .senarioinfo{
-    padding-left: 20%;
-    padding-right: 20%;
+    padding-left: 10%;
+    padding-right: 10%;
   }
+  .logBox{
+    font-size: 130%;
+  }
+  
 }
