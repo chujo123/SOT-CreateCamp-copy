@@ -1,23 +1,4 @@
 
-/*Home Button*/
-.homebtn {
-  color: black;
-  font-size: 13px;
-  background-color: lightgrey;
-  padding: 10px 10px;
-  margin: 10px 10px;
-  border: none;
-  box-sizing: border-box;
-  border-style: inset;
-  border-width: thin;
-  border-radius: 50px;
-  cursor: pointer;
-  width: 120px;
-}
-.homebtn:hover {
-  background-color: lightblue;
-  color: #000;
-}
 
 /*Drop down menu*/
 .dropdown {
@@ -39,11 +20,14 @@
 }
 .rwd-MastHead{
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
 }
 
 .dropContainer{
   display: flex;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 .dropdown-content {
@@ -83,13 +67,13 @@
 }
 
 div{
-  font-size: 115%;
+  font-size: 110%;
 }
 
 .dropbtn{
   color: black;
-  font-size: 13px;
-  background-color: lightgrey;
+  font-size: 15px;
+  background-color: rgb(240, 240, 240);
   padding: 10px 10px;
   margin: 10px 10px;
   border: none;
@@ -132,37 +116,10 @@ div{
   padding-bottom: 2.5%;
 }
 
-.showStats {
-  padding-top: 2.5%;
-  padding-bottom: 2.5%;
-}
 
-.happiness {
-  background-color: rgb(220, 220, 220);
-  margin-left: 10%;
-  /* display: inline-block; */
-  width: 35%;
-  border-radius: 25px;
-}
 
-.happinessBar {
-  color: yellow;
-  padding-bottom: 1%;
-}
 
-.moneyBar {
-  color: limegreen;
-  padding-bottom: 1%;
-}
 
-.money {
-  background-color: rgb(220, 220, 220);
-  /* display: inline-block; */
-  
-  width: 100%;
-  /* margin-left: 20%; */
-  border-radius: 50%;
-}
 
 .logBox {
   width: 80%;
@@ -171,10 +128,7 @@ div{
   margin-right: 10%;
 }
 
-.goalBox {
-  text-align: center;
-  width: 50%;
-}
+
 span {
   display: inline-block;
   vertical-align: middle;
@@ -213,6 +167,7 @@ span {
   transition: 0.4s;
 }
 
+
 .burgerMenu:hover div{
   background-color: gray;
 }
@@ -220,31 +175,32 @@ span {
 .titleSection {
   display: flex;
   margin-left: 5%;
+  padding-top: 5%;
   margin-right: 5%;
   justify-content: space-between;
-  align-items: baseline;
+  align-items: center;
 }
 h1{
     color: rgba(136, 0, 20, 0.671);
 }
 
 .mainPage{
-    height:100%;
+    /* height:100%; */
     background-color: white;
     padding-left: 10%;
     padding-right: 10%;
+    display: block;
     
 }
 
 body{
     border-top-width:0px; 
-    height:100%;
     width: 100%;
-    position: fixed;
+    position: relative;
     background-color:rgb(240, 240, 240);
     padding-left: 20%;
     padding-right: 20%;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 .senarioBody{
@@ -258,24 +214,24 @@ body{
   background-color: white;
   padding-left: 10%;
   padding-right: 10%;
-  height: 100%;
+  /* overflow: scroll; */
+  /* margin-bottom: 10%; */
+  padding-bottom: 10%;
 }
 
-.title{
-    padding-top: 2.5%;
-    padding-bottom: 2.5%;
-}
 
 .showStats{
+    font-size: 100%;
     padding-top: 2.5%;
     padding-bottom: 2.5%;
+    justify-content: space-evenly;
+    display: flex;
 }
 
 .happiness{
     background-color: rgb(240, 240, 240);
-    margin-left: 10%;
     display: inline-block;
-    width:40%;
+    width:45%;
     border-radius: 25px;
 }
 
@@ -292,7 +248,7 @@ body{
 .money{
     background-color:rgb(240, 240, 240);
     display: inline-block;
-    width:40%;
+    width:45%;
     border-radius: 25px;
 }
 
@@ -347,12 +303,13 @@ body{
 .goalBox{
     height: fit-content;  
     /* display: auto;  */
-    width:50%;
+    width:fit-content;
     margin-left: auto;
     margin-right: auto;
     background-color:rgb(240, 240, 240);
     border-radius: 25px;
-    
+    text-align: center;
+    width: 50%;
 }
 
 .goalSpan{
@@ -376,42 +333,16 @@ span {
 
 }
 /* Style the hamburger menu */
-.icon {
-    background: black;
-    display: block;
-    position: absolute;
-    right: 0;
-    top: 0;
-  }
 
-  .container {
-    /* cursor: pointer; */
-    display: inline-block;
-  }
-  
-.bar1, .bar2, .bar3 {
-    width: 35px;
-    height: 5px;
-    background-color: rgb(138, 4, 24);
-    margin: 6px 0;
-    transition: 0.4s;
-}
 
-.titleSection{
-    display: flex;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-content: space-between;
-    align-items: baseline;
-}
 
 
 /*Home Button*/
 .homebtn {
   
   color: black;
-  font-size: 13px;
-  background-color: lightgrey;
+  font-size: 100%;
+  background-color: rgb(240, 240, 240);
   padding: 10px 10px;
   margin: 10px 10px;
   border: none;
@@ -472,18 +403,14 @@ span {
   text-align: center;
 }
 
-.dropdown:hover .dropbtn {
-  background-color: rgb(68, 215, 241);
-  color: black;
-  transition: 50s;
-}
 
 
 
 
 
 .button{
-    padding-top: 1%;
+    padding-top: 5%;
+    padding-bottom: 10%;
     text-align: center;
     width:100%;
     height:100%; 
