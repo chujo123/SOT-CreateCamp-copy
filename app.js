@@ -23,6 +23,7 @@ var scenarios; // Dictionary (map) of different scenarios and options:
 var money = 100;
 var happiness = 100;
 
+
 app.get('/household', function (req, res) {
     // Converts excel file into 2D array:
     xlsxFile('./household-expenditure-statistics-year-ended-june-2019.xlsx', {sheet : 2}).then((rows) => {

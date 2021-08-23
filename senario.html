@@ -19,8 +19,13 @@
     src="app.js">
     </script>
   </head>
+  
 
-  <body onload="loadFirstScenario()">
+  
+  <body class="senarioBody" onload="loadFirstScenario()">
+    <div class="senarioinfo">
+
+    
     <header class="rwd-MastHead"><!-- Header will be changed to suit design-->
       <nav class="scanario-title"></nav>
       <div class="hero"></div>
@@ -31,7 +36,7 @@
     </header>
 
     <main>
-      <center><img id="image" src="Thriftr-graphics\Bus_Artboard 1_Artboard 1.png" alt="Bus stop image" /></center>
+      <center><img src="Thriftr-graphics\Bus_Artboard 1_Artboard 1.png" alt="Bus stop image" /></center>
         </figure>
       <div>  
         
@@ -62,6 +67,7 @@
           </div>
         </div>
       </div>
+      
     </main>
 
     <script type="text/javascript">
@@ -86,7 +92,6 @@
     const data = await response.json();
     const scenario = data.clothes;
 
-    document.getElementById('image').src = "Thriftr-graphics/clothes.png";
         document.getElementById('title').innerHTML = scenario.title;
         document.getElementById('description').innerHTML = scenario.description;
         document.getElementById('hint').innerHTML = scenario.stat;
@@ -96,5 +101,6 @@
         document.getElementById('impact2').innerHTML = scenario.options[1].moneyImpact+", "+scenario.options[1].happinessImpact;
   }
 </script>
+</div>
   </body>
 </html>
